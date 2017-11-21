@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")"
+
+trap 'rm -f hello.py' 0
+ln -s hello hello.py
+pytest hello.py "$@"

@@ -5,7 +5,7 @@ def hello(name):
     return 'Hello, {}.'.format(name)
 
 def test_hello():
-    assert 'Hello, Bob' == hello('Bob')
+    assert 'Hello, Bob.' == hello('Bob')
 
 if __name__ == '__main__':
     from sys import argv
